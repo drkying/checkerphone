@@ -20,7 +20,7 @@ function Home() {
                 console.log(inputValue);
                 //使用axios访问后端接口（http://localhost:3000/api/phone/check），上传inputValue
                 try {
-                    const response = await axios.get('https://111.230.60.241:3000/api/phone/check?inputValue=' + {inputValue});
+                    const response = await axios.get('https://api.checkerphone.com:3000/api/phone/check?inputValue=' + {inputValue});
                     // 处理响应数据
                     console.log(response.data);
                 } catch (error) {
