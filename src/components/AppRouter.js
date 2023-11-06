@@ -1,20 +1,20 @@
 import React from 'react';
+
 // import routes from '../router/index';
-import Home from "../pages/Home";
 
 function AppRouter() {
-    const routes = [
-        {
-            path: '/',
-            component: Home,
-            exact: true,
-        },
-        {
-            path: '/about',
-            component: Home,
-            exact: true,
-        }
-    ]
+    // const routes = [
+    //     {
+    //         path: '/',
+    //         component: Home,
+    //         exact: true,
+    //     },
+    //     {
+    //         path: '/about',
+    //         component: Home,
+    //         exact: true,
+    //     }
+    // ]
     return (
         // <Router>
         //     <Routes>
