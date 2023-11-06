@@ -18,9 +18,12 @@ function Home() {
             />
             <button onClick={async () => {
                 console.log(inputValue);
+                //将inputValue转化为字符串
+                let temp = inputValue.toString();
+                let url = 'https://api.checkerphone.com:3000/api/phone/check?inputValue=' + temp;
                 //使用axios访问后端接口（http://localhost:3000/api/phone/check），上传inputValue
                 try {
-                    const response = await axios.get('https://api.checkerphone.com:3000/api/phone/check?inputValue=' + {inputValue});
+                    const response = await axios.get(url);
                     // 处理响应数据
                     console.log(response.data);
                 } catch (error) {
